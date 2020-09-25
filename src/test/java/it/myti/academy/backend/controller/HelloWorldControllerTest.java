@@ -59,5 +59,6 @@ public class HelloWorldControllerTest {
         mockMvc.perform(requestBuilder)
                 .andExpect(status().isOk())
                 .andExpect(content().string(expected));
+        .andExpect(content().string(unexpcted));//errore
     }
 }
